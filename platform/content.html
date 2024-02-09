@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/content.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Slab&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+<body>
+    <div class="container">
+        <div class="profileStation" id="profileStationId">
+            <div class="header">
+                <button> <i class="fa fa-sign-out"></i></button>
+                <h3>Hola, Kevin</h3>
+            </div>
+
+
+            <form id="profileId" class="profileFormBox">
+                <div class="socialButtons" id="socialButtonsId">
+                    <div class="buttons" id="facebookMainPageButton" onclick="toggleDisplayFacebook()" > <p> <input type="checkbox" name=""> Facebook</p></div>
+                    <div class="buttons" id="instagramMainPageButton" onclick="toggleDisplayInstagram()"> <p> <input type="checkbox" name="" id=""> Instagram</p></div>
+                    <div class="buttons" id="serviciosMainPageButton" onclick="toggleDisplayServicios()"><p> <input type="checkbox" name="" id=""> Servicios</p></div>
+                    <div class="buttons" id="athMovilMainPageButton" onclick="toggleDisplayAthMovil()"><p> <input type="checkbox" name="" id=""> Ath Movil</p></div>
+                    <div class="buttons" id="booksyMainPageButton" onclick="toggleDisplayBooksy()"><p> <input type="checkbox" name="" id=""> Booksy</p></div>
+                    <div class="buttons" id="whatsappMainPageButton" onclick="toggleDisplayWhatsapp()"><p> <input type="checkbox" name="" id=""> Whatsapp</p> </div>
+                
+                
+                </div>
+
+            </form>
+            </div>
+
+<form id="eventFormBoxId" class="eventFormBox">
+
+
+    <div class="monthContainer">
+        <i class="fa fa-chevron-left" id="leftSlideId"></i>
+
+            <div class="sliderDiv" id="sliderDivId">
+                <div id="month"></div>         
+                <div id="year"></div>         
+
+            </div> 
+
+             <i class="fa fa-chevron-right"   id="rightSlideId"></i>
+
+    </div>
+
+
+            <table  cellspacing="21"  id="tableId">
+                <thead>
+                   <tr>
+                    <th>Lun</th>
+                    <th>Mar</th>
+                    <th>Mie</th>
+                    <th>Jue</th>
+                    <th>Vie</th>
+                    <th>Sab</th>
+                    <th>Dom</th>
+                   </tr> 
+                </thead>
+
+            <tbody> 
+                <tr>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td"></td>
+                    <td class="td">1</td>
+                    <td class="td">2</td>
+                </tr>    
+
+                <tr>
+                    <td class="td">2</td>
+                    <td class="td">3</td>
+                    <td class="td">4</td>
+                    <td class="td">5</td>
+                    <td class="td">6</td>
+                    <td class="td">7</td>
+                    <td class="td">8</td>
+                </tr> 
+
+                <tr>
+                    <td class="td">9</td>
+                    <td class="td">10</td>
+                    <td class="td">11</td>
+                    <td class="td">12</td>
+                    <td class="td">13</td>
+                    <td class="td">14</td>
+                    <td class="td">15</td>
+                </tr>  
+
+                <tr>
+                    <td class="td" >16</td>
+                    <td class="td">17</td>
+                    <td class="td">18</td>
+                    <td class="td">19</td>
+                    <td class="td">20</td>
+                    <td class="td">21</td>
+                    <td class="td">22</td>
+                </tr> 
+
+                <tr>
+                    <td class="td">23</td>
+                    <td class="td">24</td>
+                    <td class="td">25</td>
+                    <td class="td">26</td>
+                    <td class="td">27</td>
+                    <td class="td">28</td>
+                    <td class="td">29</td>
+                </tr> 
+
+                <tr>
+                    <td class="td">30</td>
+                    <td class="td">31</td>
+                    <td class="td">1</td>
+                    <td class="td">2</td>
+                    <td class="td">3</td>
+                    <td class="td">4</td>
+                    <td class="td">5</td>
+                </tr> 
+
+            
+            
+        </tbody>
+
+            </table>
+            <button type="button" onclick="createEvent()" id="addEventBtn" > Agregar evento </button>
+
+            <div id="eventsContainerId" class="eventsContainer">
+                <input type="file" id="image-input" name="myfile">
+                
+                <div class="eventBox" id="eventBoxId">
+                    <div class="imgLabel" id="eventBoxLeftSideId">
+                        <label for="image-input" class="imgLabel"> Toca aqui para añadir imagen de evento</label>
+                        
+                    </div>
+
+
+                    <div class="eventBoxRightSide" id="eventBoxRightSideId">
+                        <input type="text" id="boxTitle" placeholder=" Titulo">
+                        <input type="text" id="boxTime" placeholder=" Hora de llegada e ida">
+                        
+                    </div>
+
+                </div>
+
+
+                <div class="eventBox" id="eventBoxId">
+                    <div class="eventBoxLeftSide">
+                        <img src="img/background.jpg" alt="">
+                    </div>
+
+
+                    <div class="eventBoxRightSide">
+                        <h3>Reserva en el museo de Ponce</h3>
+                        <p>8:30 am - 1 pm</p>
+                        
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+        </form>
+
+
+
+<footer>
+
+
+
+<button onclick="profileView()"> Editar Perfiles <i class="fa fa-pencil"></i></button>
+<button  onclick="eventsView()">Eventos <i class="fa fa-calendar"></i>   </button>
+
+    
+</footer>
+
+    </div>
+    <script src="js/content.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Mi plataforma </title>
+</head>
+<body>
+<div class="container">
+
+    <h2>Bienvenido</h2>
+    <br>
+    <br>
+    <br>
+    <div class="circles">
+
+         <input type="text">
+ <input type="text" maxlength="1">
+ <input type="text" maxlength="1">
+ <input type="text" maxlength="1">
+ <input type="text" maxlength="1">
+
+    </div>
+<!-- 
+    <div class="txtBoxArea">
+
+           <input type="text" maxlength="5" class="txtBox" id="real">
+    <input type="text" maxlength="5" class="txtBox" id="copia">
+ 
+    </div> -->
+
+<br>
+<br>
+<br>
+<button onclick="submit()"> Submit</button>
+<!-- <button onclick="Probar()"> Probar</button> -->
+
+</div>
+
+
+<script>     
+const real = document.querySelector('#real');
+const copia = document.querySelector('#copia');
+let password = 4;
+
+
+
+
+real.addEventListener('blur', validar);
+
+
+function validar(e){
+    password = e.target.value;
+
+if (e.target.value  === password){
+    console.log('pin correcto')
+
+} else {
+    console.log('pin incorrecto');
+}
+
+}
+
+
+function submit(){
+password = e.target.value;
+
+}
+
+function Probar(){
+    console.log(password)
+
+}
+
+
+
+</script>
+</body>
+</html>

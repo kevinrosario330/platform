@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pruebas.css">
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="box2" id="box2Id"></div>
+        <img src="background.jpg" id="profile-pic">
+        <label for="input-file">update image</label>
+        <input type="file" accept=" image/jpg, image/png, image/jpeg" id="input-file">
+        <button type="submit" class="submitBtn" id="submitBtnId" onclick="addImg()"> Submit</button>
+
+
+
+    </div>
+
+
+<script>
+ let profilePic = document.getElementById('profile-pic');
+ let inputFile = document.getElementById('input-file');
+    let box1 = document.getElementById('box1Id');
+    var box2 = document.getElementById('box2Id');
+    var btn = document.getElementById('submitBtnId');
+ inputFile.onchange = function(){
+
+    profilePic.src = URL.createObjectURL(inputFile.files[0]);
+
+  const imageElement = document.createElement('img');
+    const file = document.getElementById('input-file').files[0];
+    const imageUrl = URL.createObjectURL(file);
+    imageElement.src = imageUrl;
+    document.getElementById('box2Id').appendChild(imageElement);
+
+
+ }
+  
+
+
+
+
+function addImg() {
+    console.log("hey");
+
+   
+}   
+
+
+</script>
+</body>
+</html>
